@@ -1,8 +1,8 @@
+<center>
 <p id="notice"><%= notice %></p>
 
-<h1 style="text-align: center;color: #edb009;">Pokemons</h1>
-<center>
-  <table style="width:80%;background-color: orange;border:1px solid white; " class="striped centered">
+<h1 style="color: #edb009;text-shadow: 2px 2px 2px #CE5937;">Pokémons</h1>
+  <table style="width:80%;background-color: orange;border:1px solid white;" class="striped centered">
     <thead>
       <tr>
         <th>Nome</th>
@@ -20,7 +20,7 @@
           <td><%= pokemon.categoria %></td>
           <td><%= link_to 'Show', pokemon %></td>
           <td><%= link_to 'Edit', edit_pokemon_path(pokemon) %></td>
-          <td><%= link_to 'Destroy', pokemon, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+          <td><%= link_to 'Destroy', pokemon, method: :delete, data: { confirm: 'Tem certeza?' } %></td>
         </tr>
       <% end %>
     </tbody>
@@ -28,4 +28,4 @@
 </center>
 <br>
   <center>
-<span class="waves-effect waves-light btn" style="background-color: orange;border: 1px solid white;"><%= link_to 'New Pokemon', new_pokemon_path %></span></center>
+<span class="waves-effect waves-light btn" style="background-color: orange;border: 1px solid white;"><%= link_to 'Adicionar Pokémon', new_pokemon_path %></span></center>

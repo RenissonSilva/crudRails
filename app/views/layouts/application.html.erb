@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>CrudRails</title>
+    <title>Pokédex</title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
@@ -9,12 +9,18 @@
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
   <style type="text/css">
-    a{
+    td>a,span>a{
       color: #a34c00;
+    }
+    a{
+      color: #006666;
+    }
+    form{
+      width: 60%;
     }
   </style>
 
-  <body style="background-color: #ebebeb;">
+  <body style="background-color: #f0f0f0;">
     <%= yield %>
   </body>
 </html>

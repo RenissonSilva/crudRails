@@ -28,7 +28,7 @@ class PokemonsController < ApplicationController
 
     respond_to do |format|
       if @pokemon.save
-        format.html { redirect_to @pokemon, notice: 'Pokemon was successfully created.' }
+        format.html { redirect_to @pokemon, notice: 'Criado com sucesso.' }
         format.json { render :show, status: :created, location: @pokemon }
       else
         format.html { render :new }
@@ -42,7 +42,7 @@ class PokemonsController < ApplicationController
   def update
     respond_to do |format|
       if @pokemon.update(pokemon_params)
-        format.html { redirect_to @pokemon, notice: 'Pokemon was successfully updated.' }
+        format.html { redirect_to @pokemon, notice: 'Atualizado com sucesso.' }
         format.json { render :show, status: :ok, location: @pokemon }
       else
         format.html { render :edit }
@@ -56,7 +56,7 @@ class PokemonsController < ApplicationController
   def destroy
     @pokemon.destroy
     respond_to do |format|
-      format.html { redirect_to pokemons_url, notice: 'Pokemon was successfully destroyed.' }
+      format.html { redirect_to pokemons_url, notice: 'Excluído com sucesso.' }
       format.json { head :no_content }
     end
   end

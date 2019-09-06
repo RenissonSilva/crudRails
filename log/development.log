@@ -1556,3 +1556,981 @@ Processing by PokemonsController#show as HTML
 Completed 200 OK in 15ms (Views: 12.6ms | ActiveRecord: 0.4ms | Allocations: 8446)
 
 
+DEPRECATION WARNING: Initialization autoloaded the constants ActionText::ContentHelper and ActionText::TagHelper.
+
+Being able to do this is deprecated. Autoloading during initialization is going
+to be an error condition in future versions of Rails.
+
+Reloading does not reboot the application, and therefore code executed during
+initialization does not run again. So, if you reload ActionText::ContentHelper, for example,
+the expected changes won't be reflected in that stale Module object.
+
+These autoloaded constants have been unloaded.
+
+Please, check the "Autoloading and Reloading Constants" guide for solutions.
+ (called from <main> at /home/reni/github/crudRails/config/environment.rb:5)
+Started GET "/pokemons" for 127.0.0.1 at 2019-09-06 01:03:40 -0300
+  [1m[35m (0.3ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by PokemonsController#index as HTML
+  Rendering pokemons/index.html.erb within layouts/application
+  [1m[36mPokemon Load (0.4ms)[0m  [1m[34mSELECT `pokemons`.* FROM `pokemons`[0m
+  ↳ app/views/pokemons/index.html.erb:16
+  Rendered pokemons/index.html.erb within layouts/application (Duration: 10.4ms | Allocations: 5426)
+Completed 200 OK in 977ms (Views: 968.8ms | ActiveRecord: 1.8ms | Allocations: 1271569)
+
+
+Started GET "/pokemons/new" for 127.0.0.1 at 2019-09-06 01:03:47 -0300
+Processing by PokemonsController#new as HTML
+  Rendering pokemons/new.html.erb within layouts/application
+  Rendered pokemons/_form.html.erb (Duration: 4.3ms | Allocations: 2891)
+  Rendered pokemons/new.html.erb within layouts/application (Duration: 5.4ms | Allocations: 3251)
+Completed 200 OK in 14ms (Views: 12.8ms | ActiveRecord: 0.0ms | Allocations: 11245)
+
+
+Started GET "/pokemons" for 127.0.0.1 at 2019-09-06 01:06:43 -0300
+Processing by PokemonsController#index as HTML
+  Rendering pokemons/index.html.erb within layouts/application
+  [1m[36mPokemon Load (0.4ms)[0m  [1m[34mSELECT `pokemons`.* FROM `pokemons`[0m
+  ↳ app/views/pokemons/index.html.erb:16
+  Rendered pokemons/index.html.erb within layouts/application (Duration: 2.4ms | Allocations: 1197)
+Completed 200 OK in 11ms (Views: 10.2ms | ActiveRecord: 0.4ms | Allocations: 9962)
+
+
+Started GET "/pokemons" for 127.0.0.1 at 2019-09-06 01:08:00 -0300
+Processing by PokemonsController#index as HTML
+  Rendering pokemons/index.html.erb within layouts/application
+  [1m[36mPokemon Load (0.3ms)[0m  [1m[34mSELECT `pokemons`.* FROM `pokemons`[0m
+  ↳ app/views/pokemons/index.html.erb:16
+  Rendered pokemons/index.html.erb within layouts/application (Duration: 2.6ms | Allocations: 1211)
+Completed 200 OK in 19ms (Views: 18.3ms | ActiveRecord: 0.3ms | Allocations: 9989)
+
+
+Started GET "/pokemons/2" for 127.0.0.1 at 2019-09-06 01:08:39 -0300
+Processing by PokemonsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mPokemon Load (0.8ms)[0m  [1m[34mSELECT `pokemons`.* FROM `pokemons` WHERE `pokemons`.`id` = 2 LIMIT 1[0m
+  ↳ app/controllers/pokemons_controller.rb:67:in `set_pokemon'
+  Rendering pokemons/show.html.erb within layouts/application
+  Rendered pokemons/show.html.erb within layouts/application (Duration: 0.6ms | Allocations: 300)
+Completed 200 OK in 19ms (Views: 7.3ms | ActiveRecord: 0.8ms | Allocations: 10915)
+
+
+Started GET "/pokemons/2" for 127.0.0.1 at 2019-09-06 01:09:23 -0300
+Processing by PokemonsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mPokemon Load (0.4ms)[0m  [1m[34mSELECT `pokemons`.* FROM `pokemons` WHERE `pokemons`.`id` = 2 LIMIT 1[0m
+  ↳ app/controllers/pokemons_controller.rb:67:in `set_pokemon'
+  Rendering pokemons/show.html.erb within layouts/application
+  Rendered pokemons/show.html.erb within layouts/application (Duration: 2.1ms | Allocations: 296)
+Completed 200 OK in 16ms (Views: 12.9ms | ActiveRecord: 0.4ms | Allocations: 9618)
+
+
+Started GET "/pokemons/2" for 127.0.0.1 at 2019-09-06 01:09:47 -0300
+Processing by PokemonsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mPokemon Load (0.3ms)[0m  [1m[34mSELECT `pokemons`.* FROM `pokemons` WHERE `pokemons`.`id` = 2 LIMIT 1[0m
+  ↳ app/controllers/pokemons_controller.rb:67:in `set_pokemon'
+  Rendering pokemons/show.html.erb within layouts/application
+  Rendered pokemons/show.html.erb within layouts/application (Duration: 0.6ms | Allocations: 296)
+Completed 200 OK in 11ms (Views: 9.6ms | ActiveRecord: 0.3ms | Allocations: 9607)
+
+
+Started GET "/pokemons/2" for 127.0.0.1 at 2019-09-06 01:11:33 -0300
+Processing by PokemonsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mPokemon Load (0.3ms)[0m  [1m[34mSELECT `pokemons`.* FROM `pokemons` WHERE `pokemons`.`id` = 2 LIMIT 1[0m
+  ↳ app/controllers/pokemons_controller.rb:67:in `set_pokemon'
+  Rendering pokemons/show.html.erb within layouts/application
+  Rendered pokemons/show.html.erb within layouts/application (Duration: 0.6ms | Allocations: 295)
+Completed 200 OK in 9ms (Views: 7.5ms | ActiveRecord: 0.3ms | Allocations: 9602)
+
+
+Started GET "/pokemons/2" for 127.0.0.1 at 2019-09-06 01:12:04 -0300
+Processing by PokemonsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mPokemon Load (0.3ms)[0m  [1m[34mSELECT `pokemons`.* FROM `pokemons` WHERE `pokemons`.`id` = 2 LIMIT 1[0m
+  ↳ app/controllers/pokemons_controller.rb:67:in `set_pokemon'
+  Rendering pokemons/show.html.erb within layouts/application
+  Rendered pokemons/show.html.erb within layouts/application (Duration: 0.9ms | Allocations: 295)
+Completed 200 OK in 14ms (Views: 11.7ms | ActiveRecord: 0.3ms | Allocations: 9605)
+
+
+Started GET "/pokemons/2" for 127.0.0.1 at 2019-09-06 01:12:18 -0300
+Processing by PokemonsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mPokemon Load (0.4ms)[0m  [1m[34mSELECT `pokemons`.* FROM `pokemons` WHERE `pokemons`.`id` = 2 LIMIT 1[0m
+  ↳ app/controllers/pokemons_controller.rb:67:in `set_pokemon'
+  Rendering pokemons/show.html.erb within layouts/application
+  Rendered pokemons/show.html.erb within layouts/application (Duration: 0.6ms | Allocations: 297)
+Completed 200 OK in 21ms (Views: 18.3ms | ActiveRecord: 0.4ms | Allocations: 9627)
+
+
+Started GET "/pokemons" for 127.0.0.1 at 2019-09-06 01:14:03 -0300
+Processing by PokemonsController#index as HTML
+  Rendering pokemons/index.html.erb within layouts/application
+  [1m[36mPokemon Load (0.4ms)[0m  [1m[34mSELECT `pokemons`.* FROM `pokemons`[0m
+  ↳ app/views/pokemons/index.html.erb:16
+  Rendered pokemons/index.html.erb within layouts/application (Duration: 3.7ms | Allocations: 1197)
+Completed 200 OK in 17ms (Views: 15.1ms | ActiveRecord: 0.4ms | Allocations: 9160)
+
+
+Started GET "/pokemons" for 127.0.0.1 at 2019-09-06 01:15:30 -0300
+Processing by PokemonsController#index as HTML
+  Rendering pokemons/index.html.erb within layouts/application
+  [1m[36mPokemon Load (0.4ms)[0m  [1m[34mSELECT `pokemons`.* FROM `pokemons`[0m
+  ↳ app/views/pokemons/index.html.erb:16
+  Rendered pokemons/index.html.erb within layouts/application (Duration: 2.8ms | Allocations: 1205)
+Completed 200 OK in 12ms (Views: 10.2ms | ActiveRecord: 0.4ms | Allocations: 9985)
+
+
+Started GET "/pokemons" for 127.0.0.1 at 2019-09-06 01:15:36 -0300
+Processing by PokemonsController#index as HTML
+  Rendering pokemons/index.html.erb within layouts/application
+  [1m[36mPokemon Load (0.3ms)[0m  [1m[34mSELECT `pokemons`.* FROM `pokemons`[0m
+  ↳ app/views/pokemons/index.html.erb:16
+  Rendered pokemons/index.html.erb within layouts/application (Duration: 2.3ms | Allocations: 1196)
+Completed 200 OK in 11ms (Views: 9.8ms | ActiveRecord: 0.3ms | Allocations: 9960)
+
+
+Started GET "/pokemons" for 127.0.0.1 at 2019-09-06 01:15:50 -0300
+Processing by PokemonsController#index as HTML
+  Rendering pokemons/index.html.erb within layouts/application
+  [1m[36mPokemon Load (0.3ms)[0m  [1m[34mSELECT `pokemons`.* FROM `pokemons`[0m
+  ↳ app/views/pokemons/index.html.erb:16
+  Rendered pokemons/index.html.erb within layouts/application (Duration: 2.6ms | Allocations: 1196)
+Completed 200 OK in 12ms (Views: 10.5ms | ActiveRecord: 0.3ms | Allocations: 9967)
+
+
+Started GET "/pokemons/new" for 127.0.0.1 at 2019-09-06 01:15:53 -0300
+Processing by PokemonsController#new as HTML
+  Rendering pokemons/new.html.erb within layouts/application
+  Rendered pokemons/_form.html.erb (Duration: 4.0ms | Allocations: 1267)
+  Rendered pokemons/new.html.erb within layouts/application (Duration: 5.3ms | Allocations: 1610)
+Completed 200 OK in 18ms (Views: 16.3ms | ActiveRecord: 0.0ms | Allocations: 9583)
+
+
+Started GET "/pokemons/2" for 127.0.0.1 at 2019-09-06 01:15:58 -0300
+Processing by PokemonsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mPokemon Load (0.6ms)[0m  [1m[34mSELECT `pokemons`.* FROM `pokemons` WHERE `pokemons`.`id` = 2 LIMIT 1[0m
+  ↳ app/controllers/pokemons_controller.rb:67:in `set_pokemon'
+  Rendering pokemons/show.html.erb within layouts/application
+  Rendered pokemons/show.html.erb within layouts/application (Duration: 1.0ms | Allocations: 294)
+Completed 200 OK in 15ms (Views: 10.2ms | ActiveRecord: 0.6ms | Allocations: 8809)
+
+
+Started GET "/pokemons" for 127.0.0.1 at 2019-09-06 01:16:16 -0300
+Processing by PokemonsController#index as HTML
+  Rendering pokemons/index.html.erb within layouts/application
+  [1m[36mPokemon Load (0.3ms)[0m  [1m[34mSELECT `pokemons`.* FROM `pokemons`[0m
+  ↳ app/views/pokemons/index.html.erb:16
+  Rendered pokemons/index.html.erb within layouts/application (Duration: 2.4ms | Allocations: 1196)
+Completed 200 OK in 37ms (Views: 35.9ms | ActiveRecord: 0.3ms | Allocations: 9966)
+
+
+Started GET "/pokemons/2" for 127.0.0.1 at 2019-09-06 01:16:28 -0300
+Processing by PokemonsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mPokemon Load (0.4ms)[0m  [1m[34mSELECT `pokemons`.* FROM `pokemons` WHERE `pokemons`.`id` = 2 LIMIT 1[0m
+  ↳ app/controllers/pokemons_controller.rb:67:in `set_pokemon'
+  Rendering pokemons/show.html.erb within layouts/application
+  Rendered pokemons/show.html.erb within layouts/application (Duration: 1.0ms | Allocations: 309)
+Completed 200 OK in 14ms (Views: 11.9ms | ActiveRecord: 0.4ms | Allocations: 9623)
+
+
+Started GET "/pokemons/2" for 127.0.0.1 at 2019-09-06 01:17:38 -0300
+Processing by PokemonsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mPokemon Load (0.3ms)[0m  [1m[34mSELECT `pokemons`.* FROM `pokemons` WHERE `pokemons`.`id` = 2 LIMIT 1[0m
+  ↳ app/controllers/pokemons_controller.rb:67:in `set_pokemon'
+  Rendering pokemons/show.html.erb within layouts/application
+  Rendered pokemons/show.html.erb within layouts/application (Duration: 0.6ms | Allocations: 294)
+Completed 200 OK in 13ms (Views: 11.2ms | ActiveRecord: 0.3ms | Allocations: 9613)
+
+
+Started GET "/pokemons/2" for 127.0.0.1 at 2019-09-06 01:18:05 -0300
+Processing by PokemonsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mPokemon Load (0.3ms)[0m  [1m[34mSELECT `pokemons`.* FROM `pokemons` WHERE `pokemons`.`id` = 2 LIMIT 1[0m
+  ↳ app/controllers/pokemons_controller.rb:67:in `set_pokemon'
+  Rendering pokemons/show.html.erb within layouts/application
+  Rendered pokemons/show.html.erb within layouts/application (Duration: 0.8ms | Allocations: 294)
+Completed 200 OK in 11ms (Views: 8.5ms | ActiveRecord: 0.3ms | Allocations: 9604)
+
+
+Started GET "/pokemons/2" for 127.0.0.1 at 2019-09-06 01:18:21 -0300
+Processing by PokemonsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mPokemon Load (0.3ms)[0m  [1m[34mSELECT `pokemons`.* FROM `pokemons` WHERE `pokemons`.`id` = 2 LIMIT 1[0m
+  ↳ app/controllers/pokemons_controller.rb:67:in `set_pokemon'
+  Rendering pokemons/show.html.erb within layouts/application
+  Rendered pokemons/show.html.erb within layouts/application (Duration: 0.8ms | Allocations: 294)
+Completed 200 OK in 15ms (Views: 13.0ms | ActiveRecord: 0.3ms | Allocations: 9612)
+
+
+Started GET "/pokemons/2/edit" for 127.0.0.1 at 2019-09-06 01:20:52 -0300
+Processing by PokemonsController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mPokemon Load (0.5ms)[0m  [1m[34mSELECT `pokemons`.* FROM `pokemons` WHERE `pokemons`.`id` = 2 LIMIT 1[0m
+  ↳ app/controllers/pokemons_controller.rb:67:in `set_pokemon'
+  Rendering pokemons/edit.html.erb within layouts/application
+  Rendered pokemons/_form.html.erb (Duration: 3.2ms | Allocations: 1335)
+  Rendered pokemons/edit.html.erb within layouts/application (Duration: 4.6ms | Allocations: 1729)
+Completed 200 OK in 19ms (Views: 16.1ms | ActiveRecord: 0.5ms | Allocations: 10242)
+
+
+Started GET "/pokemons/2/edit" for 127.0.0.1 at 2019-09-06 01:20:57 -0300
+Processing by PokemonsController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mPokemon Load (0.4ms)[0m  [1m[34mSELECT `pokemons`.* FROM `pokemons` WHERE `pokemons`.`id` = 2 LIMIT 1[0m
+  ↳ app/controllers/pokemons_controller.rb:67:in `set_pokemon'
+  Rendering pokemons/edit.html.erb within layouts/application
+  Rendered pokemons/_form.html.erb (Duration: 2.8ms | Allocations: 946)
+  Rendered pokemons/edit.html.erb within layouts/application (Duration: 3.3ms | Allocations: 1060)
+Completed 200 OK in 17ms (Views: 13.5ms | ActiveRecord: 0.4ms | Allocations: 9431)
+
+
+Started GET "/pokemons/2/edit" for 127.0.0.1 at 2019-09-06 01:21:08 -0300
+Processing by PokemonsController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mPokemon Load (0.3ms)[0m  [1m[34mSELECT `pokemons`.* FROM `pokemons` WHERE `pokemons`.`id` = 2 LIMIT 1[0m
+  ↳ app/controllers/pokemons_controller.rb:67:in `set_pokemon'
+  Rendering pokemons/edit.html.erb within layouts/application
+  Rendered pokemons/_form.html.erb (Duration: 2.9ms | Allocations: 1314)
+  Rendered pokemons/edit.html.erb within layouts/application (Duration: 3.8ms | Allocations: 1705)
+Completed 200 OK in 18ms (Views: 16.3ms | ActiveRecord: 0.3ms | Allocations: 11017)
+
+
+Started GET "/pokemons/2/edit" for 127.0.0.1 at 2019-09-06 01:21:43 -0300
+Processing by PokemonsController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mPokemon Load (0.4ms)[0m  [1m[34mSELECT `pokemons`.* FROM `pokemons` WHERE `pokemons`.`id` = 2 LIMIT 1[0m
+  ↳ app/controllers/pokemons_controller.rb:67:in `set_pokemon'
+  Rendering pokemons/edit.html.erb within layouts/application
+  Rendered pokemons/_form.html.erb (Duration: 1.8ms | Allocations: 1314)
+  Rendered pokemons/edit.html.erb within layouts/application (Duration: 2.6ms | Allocations: 1709)
+Completed 200 OK in 18ms (Views: 15.3ms | ActiveRecord: 0.4ms | Allocations: 11025)
+
+
+Started GET "/pokemons" for 127.0.0.1 at 2019-09-06 01:21:46 -0300
+Processing by PokemonsController#index as HTML
+  Rendering pokemons/index.html.erb within layouts/application
+  [1m[36mPokemon Load (0.3ms)[0m  [1m[34mSELECT `pokemons`.* FROM `pokemons`[0m
+  ↳ app/views/pokemons/index.html.erb:16
+  Rendered pokemons/index.html.erb within layouts/application (Duration: 2.1ms | Allocations: 1198)
+Completed 200 OK in 12ms (Views: 10.5ms | ActiveRecord: 0.3ms | Allocations: 9172)
+
+
+Started GET "/pokemons" for 127.0.0.1 at 2019-09-06 01:22:18 -0300
+Processing by PokemonsController#index as HTML
+  Rendering pokemons/index.html.erb within layouts/application
+  [1m[36mPokemon Load (0.4ms)[0m  [1m[34mSELECT `pokemons`.* FROM `pokemons`[0m
+  ↳ app/views/pokemons/index.html.erb:16
+  Rendered pokemons/index.html.erb within layouts/application (Duration: 2.6ms | Allocations: 915)
+Completed 200 OK in 13ms (Views: 10.6ms | ActiveRecord: 0.4ms | Allocations: 8739)
+
+
+Started GET "/pokemons/2" for 127.0.0.1 at 2019-09-06 01:22:19 -0300
+Processing by PokemonsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mPokemon Load (0.4ms)[0m  [1m[34mSELECT `pokemons`.* FROM `pokemons` WHERE `pokemons`.`id` = 2 LIMIT 1[0m
+  ↳ app/controllers/pokemons_controller.rb:67:in `set_pokemon'
+  Rendering pokemons/show.html.erb within layouts/application
+  Rendered pokemons/show.html.erb within layouts/application (Duration: 0.7ms | Allocations: 294)
+Completed 200 OK in 13ms (Views: 10.4ms | ActiveRecord: 0.4ms | Allocations: 8810)
+
+
+Started GET "/pokemons/2/edit" for 127.0.0.1 at 2019-09-06 01:22:21 -0300
+Processing by PokemonsController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mPokemon Load (0.4ms)[0m  [1m[34mSELECT `pokemons`.* FROM `pokemons` WHERE `pokemons`.`id` = 2 LIMIT 1[0m
+  ↳ app/controllers/pokemons_controller.rb:67:in `set_pokemon'
+  Rendering pokemons/edit.html.erb within layouts/application
+  Rendered pokemons/_form.html.erb (Duration: 2.6ms | Allocations: 949)
+  Rendered pokemons/edit.html.erb within layouts/application (Duration: 3.1ms | Allocations: 1064)
+Completed 200 OK in 16ms (Views: 13.7ms | ActiveRecord: 0.4ms | Allocations: 9432)
+
+
+Started GET "/pokemons/2/edit" for 127.0.0.1 at 2019-09-06 01:22:33 -0300
+Processing by PokemonsController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mPokemon Load (0.6ms)[0m  [1m[34mSELECT `pokemons`.* FROM `pokemons` WHERE `pokemons`.`id` = 2 LIMIT 1[0m
+  ↳ app/controllers/pokemons_controller.rb:67:in `set_pokemon'
+  Rendering pokemons/edit.html.erb within layouts/application
+  Rendered pokemons/_form.html.erb (Duration: 2.9ms | Allocations: 946)
+  Rendered pokemons/edit.html.erb within layouts/application (Duration: 3.4ms | Allocations: 1060)
+Completed 200 OK in 23ms (Views: 19.6ms | ActiveRecord: 0.6ms | Allocations: 9429)
+
+
+Started GET "/pokemons/2/edit" for 127.0.0.1 at 2019-09-06 01:23:52 -0300
+Processing by PokemonsController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mPokemon Load (0.3ms)[0m  [1m[34mSELECT `pokemons`.* FROM `pokemons` WHERE `pokemons`.`id` = 2 LIMIT 1[0m
+  ↳ app/controllers/pokemons_controller.rb:67:in `set_pokemon'
+  Rendering pokemons/edit.html.erb within layouts/application
+  Rendered pokemons/_form.html.erb (Duration: 1.7ms | Allocations: 946)
+  Rendered pokemons/edit.html.erb within layouts/application (Duration: 2.1ms | Allocations: 1060)
+Completed 200 OK in 10ms (Views: 8.2ms | ActiveRecord: 0.3ms | Allocations: 9433)
+
+
+Started GET "/pokemons/2/edit" for 127.0.0.1 at 2019-09-06 01:24:24 -0300
+Processing by PokemonsController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mPokemon Load (0.3ms)[0m  [1m[34mSELECT `pokemons`.* FROM `pokemons` WHERE `pokemons`.`id` = 2 LIMIT 1[0m
+  ↳ app/controllers/pokemons_controller.rb:67:in `set_pokemon'
+  Rendering pokemons/edit.html.erb within layouts/application
+  Rendered pokemons/_form.html.erb (Duration: 1.8ms | Allocations: 1314)
+  Rendered pokemons/edit.html.erb within layouts/application (Duration: 2.6ms | Allocations: 1712)
+Completed 200 OK in 12ms (Views: 10.0ms | ActiveRecord: 0.3ms | Allocations: 11036)
+
+
+Started GET "/pokemons/2/edit" for 127.0.0.1 at 2019-09-06 01:24:51 -0300
+Processing by PokemonsController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mPokemon Load (0.3ms)[0m  [1m[34mSELECT `pokemons`.* FROM `pokemons` WHERE `pokemons`.`id` = 2 LIMIT 1[0m
+  ↳ app/controllers/pokemons_controller.rb:67:in `set_pokemon'
+  Rendering pokemons/edit.html.erb within layouts/application
+  Rendered pokemons/_form.html.erb (Duration: 2.4ms | Allocations: 1314)
+  Rendered pokemons/edit.html.erb within layouts/application (Duration: 3.4ms | Allocations: 1706)
+Completed 200 OK in 17ms (Views: 15.1ms | ActiveRecord: 0.3ms | Allocations: 11018)
+
+
+Started GET "/pokemons/2" for 127.0.0.1 at 2019-09-06 01:24:53 -0300
+Processing by PokemonsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mPokemon Load (0.4ms)[0m  [1m[34mSELECT `pokemons`.* FROM `pokemons` WHERE `pokemons`.`id` = 2 LIMIT 1[0m
+  ↳ app/controllers/pokemons_controller.rb:67:in `set_pokemon'
+  Rendering pokemons/show.html.erb within layouts/application
+  Rendered pokemons/show.html.erb within layouts/application (Duration: 0.9ms | Allocations: 294)
+Completed 200 OK in 12ms (Views: 9.3ms | ActiveRecord: 0.4ms | Allocations: 8809)
+
+
+Started GET "/pokemons/2/edit" for 127.0.0.1 at 2019-09-06 01:24:55 -0300
+Processing by PokemonsController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mPokemon Load (0.5ms)[0m  [1m[34mSELECT `pokemons`.* FROM `pokemons` WHERE `pokemons`.`id` = 2 LIMIT 1[0m
+  ↳ app/controllers/pokemons_controller.rb:67:in `set_pokemon'
+  Rendering pokemons/edit.html.erb within layouts/application
+  Rendered pokemons/_form.html.erb (Duration: 3.6ms | Allocations: 949)
+  Rendered pokemons/edit.html.erb within layouts/application (Duration: 4.7ms | Allocations: 1064)
+Completed 200 OK in 19ms (Views: 15.9ms | ActiveRecord: 0.5ms | Allocations: 9433)
+
+
+Started GET "/pokemons/2/edit" for 127.0.0.1 at 2019-09-06 01:25:08 -0300
+Processing by PokemonsController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mPokemon Load (0.6ms)[0m  [1m[34mSELECT `pokemons`.* FROM `pokemons` WHERE `pokemons`.`id` = 2 LIMIT 1[0m
+  ↳ app/controllers/pokemons_controller.rb:67:in `set_pokemon'
+  Rendering pokemons/edit.html.erb within layouts/application
+  Rendered pokemons/_form.html.erb (Duration: 2.7ms | Allocations: 946)
+  Rendered pokemons/edit.html.erb within layouts/application (Duration: 3.5ms | Allocations: 1060)
+Completed 200 OK in 26ms (Views: 21.9ms | ActiveRecord: 0.6ms | Allocations: 9425)
+
+
+Started GET "/pokemons/2" for 127.0.0.1 at 2019-09-06 01:25:14 -0300
+Processing by PokemonsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mPokemon Load (0.7ms)[0m  [1m[34mSELECT `pokemons`.* FROM `pokemons` WHERE `pokemons`.`id` = 2 LIMIT 1[0m
+  ↳ app/controllers/pokemons_controller.rb:67:in `set_pokemon'
+  Rendering pokemons/show.html.erb within layouts/application
+  Rendered pokemons/show.html.erb within layouts/application (Duration: 0.3ms | Allocations: 95)
+Completed 200 OK in 16ms (Views: 12.2ms | ActiveRecord: 0.7ms | Allocations: 8468)
+
+
+Started GET "/pokemons/2/edit" for 127.0.0.1 at 2019-09-06 01:26:07 -0300
+Processing by PokemonsController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mPokemon Load (0.3ms)[0m  [1m[34mSELECT `pokemons`.* FROM `pokemons` WHERE `pokemons`.`id` = 2 LIMIT 1[0m
+  ↳ app/controllers/pokemons_controller.rb:67:in `set_pokemon'
+  Rendering pokemons/edit.html.erb within layouts/application
+  Rendered pokemons/_form.html.erb (Duration: 1.8ms | Allocations: 1314)
+  Rendered pokemons/edit.html.erb within layouts/application (Duration: 2.6ms | Allocations: 1708)
+Completed 200 OK in 18ms (Views: 15.1ms | ActiveRecord: 0.3ms | Allocations: 11021)
+
+
+Started GET "/pokemons/2/edit" for 127.0.0.1 at 2019-09-06 01:26:13 -0300
+Processing by PokemonsController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mPokemon Load (0.3ms)[0m  [1m[34mSELECT `pokemons`.* FROM `pokemons` WHERE `pokemons`.`id` = 2 LIMIT 1[0m
+  ↳ app/controllers/pokemons_controller.rb:67:in `set_pokemon'
+  Rendering pokemons/edit.html.erb within layouts/application
+  Rendered pokemons/_form.html.erb (Duration: 2.2ms | Allocations: 1314)
+  Rendered pokemons/edit.html.erb within layouts/application (Duration: 3.1ms | Allocations: 1707)
+Completed 200 OK in 16ms (Views: 14.1ms | ActiveRecord: 0.3ms | Allocations: 11020)
+
+
+Started GET "/pokemons/2/edit" for 127.0.0.1 at 2019-09-06 01:26:30 -0300
+Processing by PokemonsController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mPokemon Load (0.8ms)[0m  [1m[34mSELECT `pokemons`.* FROM `pokemons` WHERE `pokemons`.`id` = 2 LIMIT 1[0m
+  ↳ app/controllers/pokemons_controller.rb:67:in `set_pokemon'
+  Rendering pokemons/edit.html.erb within layouts/application
+  Rendered pokemons/_form.html.erb (Duration: 2.7ms | Allocations: 1314)
+  Rendered pokemons/edit.html.erb within layouts/application (Duration: 3.7ms | Allocations: 1706)
+Completed 200 OK in 19ms (Views: 14.8ms | ActiveRecord: 0.8ms | Allocations: 11020)
+
+
+Started GET "/pokemons/2/edit" for 127.0.0.1 at 2019-09-06 01:26:36 -0300
+Processing by PokemonsController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mPokemon Load (0.3ms)[0m  [1m[34mSELECT `pokemons`.* FROM `pokemons` WHERE `pokemons`.`id` = 2 LIMIT 1[0m
+  ↳ app/controllers/pokemons_controller.rb:67:in `set_pokemon'
+  Rendering pokemons/edit.html.erb within layouts/application
+  Rendered pokemons/_form.html.erb (Duration: 2.1ms | Allocations: 1314)
+  Rendered pokemons/edit.html.erb within layouts/application (Duration: 3.1ms | Allocations: 1706)
+Completed 200 OK in 17ms (Views: 14.9ms | ActiveRecord: 0.3ms | Allocations: 11023)
+
+
+Started GET "/pokemons/2/edit" for 127.0.0.1 at 2019-09-06 01:27:12 -0300
+Processing by PokemonsController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mPokemon Load (0.4ms)[0m  [1m[34mSELECT `pokemons`.* FROM `pokemons` WHERE `pokemons`.`id` = 2 LIMIT 1[0m
+  ↳ app/controllers/pokemons_controller.rb:67:in `set_pokemon'
+  Rendering pokemons/edit.html.erb within layouts/application
+  Rendered pokemons/_form.html.erb (Duration: 2.7ms | Allocations: 1314)
+  Rendered pokemons/edit.html.erb within layouts/application (Duration: 3.8ms | Allocations: 1706)
+Completed 200 OK in 20ms (Views: 17.9ms | ActiveRecord: 0.4ms | Allocations: 11020)
+
+
+Started GET "/pokemons/2/edit" for 127.0.0.1 at 2019-09-06 01:29:33 -0300
+Processing by PokemonsController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mPokemon Load (0.4ms)[0m  [1m[34mSELECT `pokemons`.* FROM `pokemons` WHERE `pokemons`.`id` = 2 LIMIT 1[0m
+  ↳ app/controllers/pokemons_controller.rb:67:in `set_pokemon'
+  Rendering pokemons/edit.html.erb within layouts/application
+  Rendered pokemons/edit.html.erb within layouts/application (Duration: 7.2ms | Allocations: 3793)
+Completed 500 Internal Server Error in 11ms (ActiveRecord: 0.4ms | Allocations: 5541)
+
+
+  
+ActionView::Template::Error (Missing partial pokemons/_teste, application/_teste with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby, :jbuilder]}. Searched in:
+  * "/home/reni/github/crudRails/app/views"
+  * "/home/reni/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/actiontext-6.0.0/app/views"
+  * "/home/reni/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/actionmailbox-6.0.0/app/views"
+):
+    1: <h1 style="text-align: center;">Editar Pokémon</h1>
+    2: 
+    3: <center>
+    4: <%= render 'teste', pokemon: @pokemon %>
+    5: <%= link_to 'Mostrar', @pokemon %> |
+    6: <%= link_to 'Voltar', pokemons_path %>
+    7: </center>
+  
+app/views/pokemons/edit.html.erb:4
+Started GET "/pokemons/2/edit" for 127.0.0.1 at 2019-09-06 01:29:39 -0300
+Processing by PokemonsController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mPokemon Load (0.3ms)[0m  [1m[34mSELECT `pokemons`.* FROM `pokemons` WHERE `pokemons`.`id` = 2 LIMIT 1[0m
+  ↳ app/controllers/pokemons_controller.rb:67:in `set_pokemon'
+  Rendering pokemons/edit.html.erb within layouts/application
+  Rendered pokemons/_form.html.erb (Duration: 1.8ms | Allocations: 1334)
+  Rendered pokemons/edit.html.erb within layouts/application (Duration: 2.6ms | Allocations: 1727)
+Completed 200 OK in 18ms (Views: 16.1ms | ActiveRecord: 0.3ms | Allocations: 11102)
+
+
+Started PATCH "/pokemons/2" for 127.0.0.1 at 2019-09-06 01:29:57 -0300
+Processing by PokemonsController#update as HTML
+  Parameters: {"authenticity_token"=>"MMX2K1nOKBpg/m+VbIgDBNprmponc1x1zIuYyrwmcJ3UlcHiFGXfUYg/y+J4Tk1zTAlBbh6g2UU4Cbz2444NZw==", "pokemon"=>{"nome"=>"Bulbasaur", "tipo"=>"Grass", "categoria"=>"Seed"}, "commit"=>"Update Pokemon", "id"=>"2"}
+  [1m[36mPokemon Load (0.4ms)[0m  [1m[34mSELECT `pokemons`.* FROM `pokemons` WHERE `pokemons`.`id` = 2 LIMIT 1[0m
+  ↳ app/controllers/pokemons_controller.rb:67:in `set_pokemon'
+Redirected to http://localhost:3000/pokemons/2
+Completed 302 Found in 3ms (ActiveRecord: 0.4ms | Allocations: 1334)
+
+
+Started GET "/pokemons/2" for 127.0.0.1 at 2019-09-06 01:29:57 -0300
+Processing by PokemonsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mPokemon Load (0.5ms)[0m  [1m[34mSELECT `pokemons`.* FROM `pokemons` WHERE `pokemons`.`id` = 2 LIMIT 1[0m
+  ↳ app/controllers/pokemons_controller.rb:67:in `set_pokemon'
+  Rendering pokemons/show.html.erb within layouts/application
+  Rendered pokemons/show.html.erb within layouts/application (Duration: 0.7ms | Allocations: 296)
+Completed 200 OK in 16ms (Views: 11.8ms | ActiveRecord: 0.5ms | Allocations: 8825)
+
+
+Started GET "/pokemons/2" for 127.0.0.1 at 2019-09-06 01:30:18 -0300
+Processing by PokemonsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mPokemon Load (0.3ms)[0m  [1m[34mSELECT `pokemons`.* FROM `pokemons` WHERE `pokemons`.`id` = 2 LIMIT 1[0m
+  ↳ app/controllers/pokemons_controller.rb:67:in `set_pokemon'
+  Rendering pokemons/show.html.erb within layouts/application
+  Rendered pokemons/show.html.erb within layouts/application (Duration: 0.6ms | Allocations: 297)
+Completed 200 OK in 9ms (Views: 7.6ms | ActiveRecord: 0.3ms | Allocations: 9616)
+
+
+Started GET "/pokemons/2/edit" for 127.0.0.1 at 2019-09-06 01:30:20 -0300
+Processing by PokemonsController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mPokemon Load (0.5ms)[0m  [1m[34mSELECT `pokemons`.* FROM `pokemons` WHERE `pokemons`.`id` = 2 LIMIT 1[0m
+  ↳ app/controllers/pokemons_controller.rb:67:in `set_pokemon'
+  Rendering pokemons/edit.html.erb within layouts/application
+  Rendered pokemons/_form.html.erb (Duration: 3.6ms | Allocations: 1314)
+  Rendered pokemons/edit.html.erb within layouts/application (Duration: 5.1ms | Allocations: 1706)
+Completed 200 OK in 20ms (Views: 16.3ms | ActiveRecord: 0.5ms | Allocations: 10214)
+
+
+Started PATCH "/pokemons/2" for 127.0.0.1 at 2019-09-06 01:30:21 -0300
+Processing by PokemonsController#update as HTML
+  Parameters: {"authenticity_token"=>"ET6SJa643M5FvYyBRos/jRVLu9tsda1AaKodTNnOitwgwyRdhzsyOm7jqJG+qmGC43G7bSrvTkmLgPPru95ZGg==", "pokemon"=>{"nome"=>"Bulbasaur", "tipo"=>"Grass", "categoria"=>"Seed"}, "commit"=>"Update Pokemon", "id"=>"2"}
+  [1m[36mPokemon Load (0.3ms)[0m  [1m[34mSELECT `pokemons`.* FROM `pokemons` WHERE `pokemons`.`id` = 2 LIMIT 1[0m
+  ↳ app/controllers/pokemons_controller.rb:67:in `set_pokemon'
+Redirected to http://localhost:3000/pokemons/2
+Completed 302 Found in 2ms (ActiveRecord: 0.3ms | Allocations: 1179)
+
+
+Started GET "/pokemons/2" for 127.0.0.1 at 2019-09-06 01:30:21 -0300
+Processing by PokemonsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mPokemon Load (0.3ms)[0m  [1m[34mSELECT `pokemons`.* FROM `pokemons` WHERE `pokemons`.`id` = 2 LIMIT 1[0m
+  ↳ app/controllers/pokemons_controller.rb:67:in `set_pokemon'
+  Rendering pokemons/show.html.erb within layouts/application
+  Rendered pokemons/show.html.erb within layouts/application (Duration: 0.4ms | Allocations: 99)
+Completed 200 OK in 10ms (Views: 8.2ms | ActiveRecord: 0.3ms | Allocations: 8485)
+
+
+Started GET "/pokemons/2/edit" for 127.0.0.1 at 2019-09-06 01:30:30 -0300
+Processing by PokemonsController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mPokemon Load (0.5ms)[0m  [1m[34mSELECT `pokemons`.* FROM `pokemons` WHERE `pokemons`.`id` = 2 LIMIT 1[0m
+  ↳ app/controllers/pokemons_controller.rb:67:in `set_pokemon'
+  Rendering pokemons/edit.html.erb within layouts/application
+  Rendered pokemons/_form.html.erb (Duration: 3.4ms | Allocations: 1314)
+  Rendered pokemons/edit.html.erb within layouts/application (Duration: 4.6ms | Allocations: 1706)
+Completed 200 OK in 17ms (Views: 13.7ms | ActiveRecord: 0.5ms | Allocations: 11030)
+
+
+Started PATCH "/pokemons/2" for 127.0.0.1 at 2019-09-06 01:30:31 -0300
+Processing by PokemonsController#update as HTML
+  Parameters: {"authenticity_token"=>"rN0NyXovpzRPM8Ho2OIe4vjSoi+d65MCjy5zSyMRDhmdILuxU6xJwGRt5fggw0DtDuiimdtxcAtsBJ3sQQHd3w==", "pokemon"=>{"nome"=>"Bulbasaur", "tipo"=>"Grass", "categoria"=>"Seed"}, "commit"=>"Update Pokemon", "id"=>"2"}
+  [1m[36mPokemon Load (0.5ms)[0m  [1m[34mSELECT `pokemons`.* FROM `pokemons` WHERE `pokemons`.`id` = 2 LIMIT 1[0m
+  ↳ app/controllers/pokemons_controller.rb:67:in `set_pokemon'
+Redirected to http://localhost:3000/pokemons/2
+Completed 302 Found in 6ms (ActiveRecord: 0.5ms | Allocations: 1180)
+
+
+Started GET "/pokemons/2" for 127.0.0.1 at 2019-09-06 01:30:31 -0300
+Processing by PokemonsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mPokemon Load (0.3ms)[0m  [1m[34mSELECT `pokemons`.* FROM `pokemons` WHERE `pokemons`.`id` = 2 LIMIT 1[0m
+  ↳ app/controllers/pokemons_controller.rb:67:in `set_pokemon'
+  Rendering pokemons/show.html.erb within layouts/application
+  Rendered pokemons/show.html.erb within layouts/application (Duration: 6.7ms | Allocations: 302)
+Completed 200 OK in 17ms (Views: 14.5ms | ActiveRecord: 0.3ms | Allocations: 8821)
+
+
+Started GET "/pokemons/2" for 127.0.0.1 at 2019-09-06 01:33:42 -0300
+Processing by PokemonsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mPokemon Load (0.3ms)[0m  [1m[34mSELECT `pokemons`.* FROM `pokemons` WHERE `pokemons`.`id` = 2 LIMIT 1[0m
+  ↳ app/controllers/pokemons_controller.rb:67:in `set_pokemon'
+  Rendering pokemons/show.html.erb within layouts/application
+  Rendered pokemons/show.html.erb within layouts/application (Duration: 1.1ms | Allocations: 300)
+Completed 200 OK in 33ms (Views: 20.4ms | ActiveRecord: 1.7ms | Allocations: 13801)
+
+
+Started GET "/pokemons" for 127.0.0.1 at 2019-09-06 01:33:43 -0300
+Processing by PokemonsController#index as HTML
+  Rendering pokemons/index.html.erb within layouts/application
+  [1m[36mPokemon Load (0.5ms)[0m  [1m[34mSELECT `pokemons`.* FROM `pokemons`[0m
+  ↳ app/views/pokemons/index.html.erb:16
+  Rendered pokemons/index.html.erb within layouts/application (Duration: 4.0ms | Allocations: 1249)
+Completed 200 OK in 18ms (Views: 16.0ms | ActiveRecord: 0.5ms | Allocations: 9219)
+
+
+Started GET "/pokemons/2" for 127.0.0.1 at 2019-09-06 01:33:45 -0300
+Processing by PokemonsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mPokemon Load (0.3ms)[0m  [1m[34mSELECT `pokemons`.* FROM `pokemons` WHERE `pokemons`.`id` = 2 LIMIT 1[0m
+  ↳ app/controllers/pokemons_controller.rb:67:in `set_pokemon'
+  Rendering pokemons/show.html.erb within layouts/application
+  Rendered pokemons/show.html.erb within layouts/application (Duration: 0.4ms | Allocations: 96)
+Completed 200 OK in 15ms (Views: 12.4ms | ActiveRecord: 0.3ms | Allocations: 8466)
+
+
+Started GET "/pokemons/2/edit" for 127.0.0.1 at 2019-09-06 01:33:46 -0300
+Processing by PokemonsController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mPokemon Load (0.4ms)[0m  [1m[34mSELECT `pokemons`.* FROM `pokemons` WHERE `pokemons`.`id` = 2 LIMIT 1[0m
+  ↳ app/controllers/pokemons_controller.rb:67:in `set_pokemon'
+  Rendering pokemons/edit.html.erb within layouts/application
+  Rendered pokemons/_form.html.erb (Duration: 4.9ms | Allocations: 1317)
+  Rendered pokemons/edit.html.erb within layouts/application (Duration: 7.1ms | Allocations: 1710)
+Completed 200 OK in 20ms (Views: 15.9ms | ActiveRecord: 0.4ms | Allocations: 10219)
+
+
+Started PATCH "/pokemons/2" for 127.0.0.1 at 2019-09-06 01:33:48 -0300
+Processing by PokemonsController#update as HTML
+  Parameters: {"authenticity_token"=>"YAEpuXemXu86f9Fhy69D7bnRrUURwrk30CVkU6iB0IZR/J/BXiWwGxEh9XEzjh3iT+ut81dYWj4zD4r0ypEDQA==", "pokemon"=>{"nome"=>"Bulbasaur", "tipo"=>"Grass", "categoria"=>"Seed"}, "commit"=>"Update Pokemon", "id"=>"2"}
+  [1m[36mPokemon Load (0.3ms)[0m  [1m[34mSELECT `pokemons`.* FROM `pokemons` WHERE `pokemons`.`id` = 2 LIMIT 1[0m
+  ↳ app/controllers/pokemons_controller.rb:67:in `set_pokemon'
+Redirected to http://localhost:3000/pokemons/2
+Completed 302 Found in 4ms (ActiveRecord: 0.3ms | Allocations: 1210)
+
+
+Started GET "/pokemons/2" for 127.0.0.1 at 2019-09-06 01:33:48 -0300
+Processing by PokemonsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mPokemon Load (0.6ms)[0m  [1m[34mSELECT `pokemons`.* FROM `pokemons` WHERE `pokemons`.`id` = 2 LIMIT 1[0m
+  ↳ app/controllers/pokemons_controller.rb:67:in `set_pokemon'
+  Rendering pokemons/show.html.erb within layouts/application
+  Rendered pokemons/show.html.erb within layouts/application (Duration: 1.2ms | Allocations: 98)
+Completed 200 OK in 22ms (Views: 17.3ms | ActiveRecord: 0.6ms | Allocations: 8486)
+
+
+Started GET "/pokemons" for 127.0.0.1 at 2019-09-06 01:33:50 -0300
+Processing by PokemonsController#index as HTML
+  Rendering pokemons/index.html.erb within layouts/application
+  [1m[36mPokemon Load (0.4ms)[0m  [1m[34mSELECT `pokemons`.* FROM `pokemons`[0m
+  ↳ app/views/pokemons/index.html.erb:16
+  Rendered pokemons/index.html.erb within layouts/application (Duration: 3.9ms | Allocations: 916)
+Completed 200 OK in 16ms (Views: 15.4ms | ActiveRecord: 0.4ms | Allocations: 8740)
+
+
+Started GET "/pokemons/2/edit" for 127.0.0.1 at 2019-09-06 01:33:51 -0300
+Processing by PokemonsController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mPokemon Load (0.4ms)[0m  [1m[34mSELECT `pokemons`.* FROM `pokemons` WHERE `pokemons`.`id` = 2 LIMIT 1[0m
+  ↳ app/controllers/pokemons_controller.rb:67:in `set_pokemon'
+  Rendering pokemons/edit.html.erb within layouts/application
+  Rendered pokemons/_form.html.erb (Duration: 1.6ms | Allocations: 946)
+  Rendered pokemons/edit.html.erb within layouts/application (Duration: 2.0ms | Allocations: 1060)
+Completed 200 OK in 14ms (Views: 11.7ms | ActiveRecord: 0.4ms | Allocations: 9433)
+
+
+Started PATCH "/pokemons/2" for 127.0.0.1 at 2019-09-06 01:33:53 -0300
+Processing by PokemonsController#update as HTML
+  Parameters: {"authenticity_token"=>"q6j3BnfxSdB6rSQjMPuFBdS1/rc0rvVjs4NbytDkwQOaVUF+XnKnJFHzADPI2tsKIo/+AXI0FmpQqbVtsvQSxQ==", "pokemon"=>{"nome"=>"Bulbasaur", "tipo"=>"Grass", "categoria"=>"Seed"}, "commit"=>"Update Pokemon", "id"=>"2"}
+  [1m[36mPokemon Load (0.5ms)[0m  [1m[34mSELECT `pokemons`.* FROM `pokemons` WHERE `pokemons`.`id` = 2 LIMIT 1[0m
+  ↳ app/controllers/pokemons_controller.rb:67:in `set_pokemon'
+Redirected to http://localhost:3000/pokemons/2
+Completed 302 Found in 4ms (ActiveRecord: 0.5ms | Allocations: 1169)
+
+
+Started GET "/pokemons/2" for 127.0.0.1 at 2019-09-06 01:33:53 -0300
+Processing by PokemonsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mPokemon Load (0.4ms)[0m  [1m[34mSELECT `pokemons`.* FROM `pokemons` WHERE `pokemons`.`id` = 2 LIMIT 1[0m
+  ↳ app/controllers/pokemons_controller.rb:67:in `set_pokemon'
+  Rendering pokemons/show.html.erb within layouts/application
+  Rendered pokemons/show.html.erb within layouts/application (Duration: 0.3ms | Allocations: 96)
+Completed 200 OK in 15ms (Views: 12.5ms | ActiveRecord: 0.4ms | Allocations: 8485)
+
+
+Started GET "/pokemons" for 127.0.0.1 at 2019-09-06 01:33:54 -0300
+Processing by PokemonsController#index as HTML
+  Rendering pokemons/index.html.erb within layouts/application
+  [1m[36mPokemon Load (0.3ms)[0m  [1m[34mSELECT `pokemons`.* FROM `pokemons`[0m
+  ↳ app/views/pokemons/index.html.erb:16
+  Rendered pokemons/index.html.erb within layouts/application (Duration: 1.8ms | Allocations: 915)
+Completed 200 OK in 10ms (Views: 9.2ms | ActiveRecord: 0.3ms | Allocations: 8734)
+
+
+Started DELETE "/pokemons/2" for 127.0.0.1 at 2019-09-06 01:33:57 -0300
+Processing by PokemonsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"AWk0Chux8gdOdDk8fQPitUq627z1D6bu8jDTnUOWGyTlOQPDVhoFTKa1nUtpxazC3NgASMzcI94GsvehHD5m3g==", "id"=>"2"}
+  [1m[36mPokemon Load (0.4ms)[0m  [1m[34mSELECT `pokemons`.* FROM `pokemons` WHERE `pokemons`.`id` = 2 LIMIT 1[0m
+  ↳ app/controllers/pokemons_controller.rb:67:in `set_pokemon'
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/pokemons_controller.rb:57:in `destroy'
+  [1m[36mPokemon Destroy (0.2ms)[0m  [1m[31mDELETE FROM `pokemons` WHERE `pokemons`.`id` = 2[0m
+  ↳ app/controllers/pokemons_controller.rb:57:in `destroy'
+  [1m[35m (127.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/pokemons_controller.rb:57:in `destroy'
+Redirected to http://localhost:3000/pokemons
+Completed 302 Found in 133ms (ActiveRecord: 127.9ms | Allocations: 2711)
+
+
+Started GET "/pokemons" for 127.0.0.1 at 2019-09-06 01:33:57 -0300
+Processing by PokemonsController#index as HTML
+  Rendering pokemons/index.html.erb within layouts/application
+  [1m[36mPokemon Load (0.3ms)[0m  [1m[34mSELECT `pokemons`.* FROM `pokemons`[0m
+  ↳ app/views/pokemons/index.html.erb:16
+  Rendered pokemons/index.html.erb within layouts/application (Duration: 1.4ms | Allocations: 791)
+Completed 200 OK in 11ms (Views: 10.2ms | ActiveRecord: 0.3ms | Allocations: 8624)
+
+
+Started GET "/pokemons" for 127.0.0.1 at 2019-09-06 01:34:14 -0300
+Processing by PokemonsController#index as HTML
+  Rendering pokemons/index.html.erb within layouts/application
+  [1m[36mPokemon Load (0.3ms)[0m  [1m[34mSELECT `pokemons`.* FROM `pokemons`[0m
+  ↳ app/views/pokemons/index.html.erb:16
+  Rendered pokemons/index.html.erb within layouts/application (Duration: 2.1ms | Allocations: 1074)
+Completed 200 OK in 20ms (Views: 18.1ms | ActiveRecord: 0.3ms | Allocations: 9842)
+
+
+Started DELETE "/pokemons/3" for 127.0.0.1 at 2019-09-06 01:34:17 -0300
+Processing by PokemonsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"wGqWh/kaBVFxT3izcqv3J0tOyg9Fla5MykUQ7vupDbMkOqFOtLHyGpmO3MRmbblQ3SwR+3xGK3w+xzTSpAFwSQ==", "id"=>"3"}
+  [1m[36mPokemon Load (0.3ms)[0m  [1m[34mSELECT `pokemons`.* FROM `pokemons` WHERE `pokemons`.`id` = 3 LIMIT 1[0m
+  ↳ app/controllers/pokemons_controller.rb:67:in `set_pokemon'
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/pokemons_controller.rb:57:in `destroy'
+  [1m[36mPokemon Destroy (1.8ms)[0m  [1m[31mDELETE FROM `pokemons` WHERE `pokemons`.`id` = 3[0m
+  ↳ app/controllers/pokemons_controller.rb:57:in `destroy'
+  [1m[35m (84.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/pokemons_controller.rb:57:in `destroy'
+Redirected to http://localhost:3000/pokemons
+Completed 302 Found in 93ms (ActiveRecord: 86.9ms | Allocations: 2685)
+
+
+Started GET "/pokemons" for 127.0.0.1 at 2019-09-06 01:34:18 -0300
+Processing by PokemonsController#index as HTML
+  Rendering pokemons/index.html.erb within layouts/application
+  [1m[36mPokemon Load (0.3ms)[0m  [1m[34mSELECT `pokemons`.* FROM `pokemons`[0m
+  ↳ app/views/pokemons/index.html.erb:16
+  Rendered pokemons/index.html.erb within layouts/application (Duration: 1.3ms | Allocations: 672)
+Completed 200 OK in 15ms (Views: 14.2ms | ActiveRecord: 0.3ms | Allocations: 8508)
+
+
+Started GET "/pokemons/new" for 127.0.0.1 at 2019-09-06 01:34:22 -0300
+Processing by PokemonsController#new as HTML
+  Rendering pokemons/new.html.erb within layouts/application
+  Rendered pokemons/_form.html.erb (Duration: 2.8ms | Allocations: 1267)
+  Rendered pokemons/new.html.erb within layouts/application (Duration: 3.8ms | Allocations: 1609)
+Completed 200 OK in 12ms (Views: 10.3ms | ActiveRecord: 0.0ms | Allocations: 9586)
+
+
+Started GET "/pokemons/new" for 127.0.0.1 at 2019-09-06 01:34:44 -0300
+Processing by PokemonsController#new as HTML
+  Rendering pokemons/new.html.erb within layouts/application
+  Rendered pokemons/_form.html.erb (Duration: 26.5ms | Allocations: 1267)
+  Rendered pokemons/new.html.erb within layouts/application (Duration: 28.2ms | Allocations: 1613)
+Completed 200 OK in 43ms (Views: 42.1ms | ActiveRecord: 0.0ms | Allocations: 10403)
+
+
+Started GET "/pokemons/new" for 127.0.0.1 at 2019-09-06 01:35:00 -0300
+Processing by PokemonsController#new as HTML
+  Rendering pokemons/new.html.erb within layouts/application
+  Rendered pokemons/_form.html.erb (Duration: 2.6ms | Allocations: 1267)
+  Rendered pokemons/new.html.erb within layouts/application (Duration: 3.9ms | Allocations: 1615)
+Completed 200 OK in 22ms (Views: 20.5ms | ActiveRecord: 0.0ms | Allocations: 10397)
+
+
+Started GET "/pokemons" for 127.0.0.1 at 2019-09-06 01:35:02 -0300
+Processing by PokemonsController#index as HTML
+  Rendering pokemons/index.html.erb within layouts/application
+  [1m[36mPokemon Load (0.5ms)[0m  [1m[34mSELECT `pokemons`.* FROM `pokemons`[0m
+  ↳ app/views/pokemons/index.html.erb:16
+  Rendered pokemons/index.html.erb within layouts/application (Duration: 3.3ms | Allocations: 946)
+Completed 200 OK in 17ms (Views: 14.2ms | ActiveRecord: 0.5ms | Allocations: 8913)
+
+
+Started GET "/pokemons/new" for 127.0.0.1 at 2019-09-06 01:35:04 -0300
+Processing by PokemonsController#new as HTML
+  Rendering pokemons/new.html.erb within layouts/application
+  Rendered pokemons/_form.html.erb (Duration: 2.3ms | Allocations: 902)
+  Rendered pokemons/new.html.erb within layouts/application (Duration: 2.7ms | Allocations: 987)
+Completed 200 OK in 22ms (Views: 20.6ms | ActiveRecord: 0.0ms | Allocations: 8816)
+
+
+Started GET "/pokemons" for 127.0.0.1 at 2019-09-06 01:35:06 -0300
+Processing by PokemonsController#index as HTML
+  Rendering pokemons/index.html.erb within layouts/application
+  [1m[36mPokemon Load (0.3ms)[0m  [1m[34mSELECT `pokemons`.* FROM `pokemons`[0m
+  ↳ app/views/pokemons/index.html.erb:16
+  Rendered pokemons/index.html.erb within layouts/application (Duration: 1.6ms | Allocations: 665)
+Completed 200 OK in 14ms (Views: 12.5ms | ActiveRecord: 0.3ms | Allocations: 8490)
+
+
+Started GET "/pokemons" for 127.0.0.1 at 2019-09-06 01:35:38 -0300
+Processing by PokemonsController#index as HTML
+  Rendering pokemons/index.html.erb within layouts/application
+  [1m[36mPokemon Load (0.4ms)[0m  [1m[34mSELECT `pokemons`.* FROM `pokemons`[0m
+  ↳ app/views/pokemons/index.html.erb:16
+  Rendered pokemons/index.html.erb within layouts/application (Duration: 2.0ms | Allocations: 947)
+Completed 200 OK in 10ms (Views: 9.3ms | ActiveRecord: 0.4ms | Allocations: 9720)
+
+
+Started GET "/pokemons" for 127.0.0.1 at 2019-09-06 01:36:05 -0300
+Processing by PokemonsController#index as HTML
+  Rendering pokemons/index.html.erb within layouts/application
+  [1m[36mPokemon Load (0.4ms)[0m  [1m[34mSELECT `pokemons`.* FROM `pokemons`[0m
+  ↳ app/views/pokemons/index.html.erb:16
+  Rendered pokemons/index.html.erb within layouts/application (Duration: 2.9ms | Allocations: 947)
+Completed 200 OK in 20ms (Views: 18.0ms | ActiveRecord: 0.4ms | Allocations: 9714)
+
+
+Started GET "/pokemons/new" for 127.0.0.1 at 2019-09-06 01:36:06 -0300
+Processing by PokemonsController#new as HTML
+  Rendering pokemons/new.html.erb within layouts/application
+  Rendered pokemons/_form.html.erb (Duration: 3.0ms | Allocations: 1267)
+  Rendered pokemons/new.html.erb within layouts/application (Duration: 4.0ms | Allocations: 1614)
+Completed 200 OK in 12ms (Views: 11.1ms | ActiveRecord: 0.0ms | Allocations: 9585)
+
+
+Started POST "/pokemons" for 127.0.0.1 at 2019-09-06 01:37:41 -0300
+Processing by PokemonsController#create as HTML
+  Parameters: {"authenticity_token"=>"zbN4BHrwuPiA5AQijn7R4VvBzIWYJrLG5DVLN6CbgJhgM/NPmEQRuFY1VeNQwVL5sBTpquflIadnG98vcmndPw==", "pokemon"=>{"nome"=>"Charmander", "tipo"=>"Fogo", "categoria"=>"Lagarto"}, "commit"=>"Create Pokemon"}
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/pokemons_controller.rb:30:in `block in create'
+  [1m[36mPokemon Create (265.5ms)[0m  [1m[32mINSERT INTO `pokemons` (`nome`, `tipo`, `categoria`, `created_at`, `updated_at`) VALUES ('Charmander', 'Fogo', 'Lagarto', '2019-09-06 04:37:41.593540', '2019-09-06 04:37:41.593540')[0m
+  ↳ app/controllers/pokemons_controller.rb:30:in `block in create'
+  [1m[35m (96.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/pokemons_controller.rb:30:in `block in create'
+Redirected to http://localhost:3000/pokemons/4
+Completed 302 Found in 367ms (ActiveRecord: 362.3ms | Allocations: 2685)
+
+
+Started GET "/pokemons/4" for 127.0.0.1 at 2019-09-06 01:37:41 -0300
+Processing by PokemonsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mPokemon Load (0.3ms)[0m  [1m[34mSELECT `pokemons`.* FROM `pokemons` WHERE `pokemons`.`id` = 4 LIMIT 1[0m
+  ↳ app/controllers/pokemons_controller.rb:67:in `set_pokemon'
+  Rendering pokemons/show.html.erb within layouts/application
+  Rendered pokemons/show.html.erb within layouts/application (Duration: 0.5ms | Allocations: 296)
+Completed 200 OK in 9ms (Views: 6.7ms | ActiveRecord: 0.3ms | Allocations: 8832)
+
+
+Started GET "/pokemons" for 127.0.0.1 at 2019-09-06 01:37:44 -0300
+Processing by PokemonsController#index as HTML
+  Rendering pokemons/index.html.erb within layouts/application
+  [1m[36mPokemon Load (0.3ms)[0m  [1m[34mSELECT `pokemons`.* FROM `pokemons`[0m
+  ↳ app/views/pokemons/index.html.erb:16
+  Rendered pokemons/index.html.erb within layouts/application (Duration: 1.8ms | Allocations: 793)
+Completed 200 OK in 12ms (Views: 11.2ms | ActiveRecord: 0.3ms | Allocations: 8620)
+
+
+Started GET "/pokemons/new" for 127.0.0.1 at 2019-09-06 01:38:55 -0300
+Processing by PokemonsController#new as HTML
+  Rendering pokemons/new.html.erb within layouts/application
+  Rendered pokemons/_form.html.erb (Duration: 1.6ms | Allocations: 901)
+  Rendered pokemons/new.html.erb within layouts/application (Duration: 1.9ms | Allocations: 986)
+Completed 200 OK in 14ms (Views: 13.7ms | ActiveRecord: 0.0ms | Allocations: 8817)
+
+
+Started POST "/pokemons" for 127.0.0.1 at 2019-09-06 01:39:22 -0300
+Processing by PokemonsController#create as HTML
+  Parameters: {"authenticity_token"=>"UpU8OTwznvUtTV1UhA/YAkvhT8Iso5IcM9UWruog3LL/Fbdy3oc3tfucDJVasFsaoDRq7VNgAX2w+4K2ONKBFQ==", "pokemon"=>{"nome"=>"Squirtle", "tipo"=>"Água", "categoria"=>"Tartaruga"}, "commit"=>"Create Pokemon"}
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/pokemons_controller.rb:30:in `block in create'
+  [1m[36mPokemon Create (75.6ms)[0m  [1m[32mINSERT INTO `pokemons` (`nome`, `tipo`, `categoria`, `created_at`, `updated_at`) VALUES ('Squirtle', 'Água', 'Tartaruga', '2019-09-06 04:39:22.175700', '2019-09-06 04:39:22.175700')[0m
+  ↳ app/controllers/pokemons_controller.rb:30:in `block in create'
+  [1m[35m (89.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/pokemons_controller.rb:30:in `block in create'
+Redirected to http://localhost:3000/pokemons/5
+Completed 302 Found in 172ms (ActiveRecord: 165.2ms | Allocations: 2611)
+
+
+Started GET "/pokemons/5" for 127.0.0.1 at 2019-09-06 01:39:22 -0300
+Processing by PokemonsController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mPokemon Load (0.4ms)[0m  [1m[34mSELECT `pokemons`.* FROM `pokemons` WHERE `pokemons`.`id` = 5 LIMIT 1[0m
+  ↳ app/controllers/pokemons_controller.rb:67:in `set_pokemon'
+  Rendering pokemons/show.html.erb within layouts/application
+  Rendered pokemons/show.html.erb within layouts/application (Duration: 0.3ms | Allocations: 96)
+Completed 200 OK in 12ms (Views: 9.7ms | ActiveRecord: 0.4ms | Allocations: 8479)
+
+
+Started GET "/pokemons" for 127.0.0.1 at 2019-09-06 01:39:23 -0300
+Processing by PokemonsController#index as HTML
+  Rendering pokemons/index.html.erb within layouts/application
+  [1m[36mPokemon Load (0.4ms)[0m  [1m[34mSELECT `pokemons`.* FROM `pokemons`[0m
+  ↳ app/views/pokemons/index.html.erb:16
+  Rendered pokemons/index.html.erb within layouts/application (Duration: 3.0ms | Allocations: 915)
+Completed 200 OK in 15ms (Views: 12.7ms | ActiveRecord: 0.4ms | Allocations: 8741)
+
+
+Started GET "/pokemons/new" for 127.0.0.1 at 2019-09-06 01:39:25 -0300
+Processing by PokemonsController#new as HTML
+  Rendering pokemons/new.html.erb within layouts/application
+  Rendered pokemons/_form.html.erb (Duration: 2.3ms | Allocations: 899)
+  Rendered pokemons/new.html.erb within layouts/application (Duration: 3.0ms | Allocations: 984)
+Completed 200 OK in 24ms (Views: 23.3ms | ActiveRecord: 0.0ms | Allocations: 8817)
+
+
+Started POST "/pokemons" for 127.0.0.1 at 2019-09-06 01:40:56 -0300
+Processing by PokemonsController#create as HTML
+  Parameters: {"authenticity_token"=>"4qYUgnnk57xO4MCJUhpPfY63ujTnFj09+kLMBwWnek5PJp/Jm1BO/JgxkUiMpcxlZWKfG5jVrlx5bFgf11Un6Q==", "pokemon"=>{"nome"=>"Bulbassauro", "tipo"=>"Planta/Venenoso", "categoria"=>"lalalalalala"}, "commit"=>"Create Pokemon"}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/pokemons_controller.rb:30:in `block in create'
+  [1m[36mPokemon Create (0.2ms)[0m  [1m[32mINSERT INTO `pokemons` (`nome`, `tipo`, `categoria`, `created_at`, `updated_at`) VALUES ('Bulbassauro', 'Planta/Venenoso', 'lalalalalala', '2019-09-06 04:40:56.998158', '2019-09-06 04:40:56.998158')[0m
+  ↳ app/controllers/pokemons_controller.rb:30:in `block in create'
+  [1m[35m (100.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/pokemons_controller.rb:30:in `block in create'
+Redirected to http://localhost:3000/pokemons/6
+Completed 302 Found in 108ms (ActiveRecord: 100.6ms | Allocations: 2597)
+
+
+Started GET "/pokemons/6" for 127.0.0.1 at 2019-09-06 01:40:57 -0300
+Processing by PokemonsController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mPokemon Load (0.3ms)[0m  [1m[34mSELECT `pokemons`.* FROM `pokemons` WHERE `pokemons`.`id` = 6 LIMIT 1[0m
+  ↳ app/controllers/pokemons_controller.rb:67:in `set_pokemon'
+  Rendering pokemons/show.html.erb within layouts/application
+  Rendered pokemons/show.html.erb within layouts/application (Duration: 0.3ms | Allocations: 96)
+Completed 200 OK in 8ms (Views: 6.1ms | ActiveRecord: 0.3ms | Allocations: 8479)
+
+
+Started GET "/pokemons" for 127.0.0.1 at 2019-09-06 01:40:58 -0300
+Processing by PokemonsController#index as HTML
+  Rendering pokemons/index.html.erb within layouts/application
+  [1m[36mPokemon Load (0.5ms)[0m  [1m[34mSELECT `pokemons`.* FROM `pokemons`[0m
+  ↳ app/views/pokemons/index.html.erb:16
+  Rendered pokemons/index.html.erb within layouts/application (Duration: 7.7ms | Allocations: 1040)
+Completed 200 OK in 18ms (Views: 16.9ms | ActiveRecord: 0.5ms | Allocations: 8860)
+
+
+Started GET "/pokemons/new" for 127.0.0.1 at 2019-09-06 01:41:02 -0300
+Processing by PokemonsController#new as HTML
+  Rendering pokemons/new.html.erb within layouts/application
+  Rendered pokemons/_form.html.erb (Duration: 20.2ms | Allocations: 899)
+  Rendered pokemons/new.html.erb within layouts/application (Duration: 20.7ms | Allocations: 984)
+Completed 200 OK in 35ms (Views: 34.0ms | ActiveRecord: 0.0ms | Allocations: 8817)
+
+
+Started POST "/pokemons" for 127.0.0.1 at 2019-09-06 01:41:05 -0300
+Processing by PokemonsController#create as HTML
+  Parameters: {"authenticity_token"=>"3A1d2qggBYeshYY7VyEvOpJ3iTjloSqITKXJ+JWaIrZxjdaRSpSsx3pU1/qJnqwieaKsF5piuenPi13gR2h/EQ==", "pokemon"=>{"nome"=>"a", "tipo"=>"a", "categoria"=>"a"}, "commit"=>"Create Pokemon"}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/pokemons_controller.rb:30:in `block in create'
+  [1m[36mPokemon Create (0.3ms)[0m  [1m[32mINSERT INTO `pokemons` (`nome`, `tipo`, `categoria`, `created_at`, `updated_at`) VALUES ('a', 'a', 'a', '2019-09-06 04:41:05.109077', '2019-09-06 04:41:05.109077')[0m
+  ↳ app/controllers/pokemons_controller.rb:30:in `block in create'
+  [1m[35m (162.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/pokemons_controller.rb:30:in `block in create'
+Redirected to http://localhost:3000/pokemons/7
+Completed 302 Found in 169ms (ActiveRecord: 163.2ms | Allocations: 2601)
+
+
+Started GET "/pokemons/7" for 127.0.0.1 at 2019-09-06 01:41:05 -0300
+Processing by PokemonsController#show as HTML
+  Parameters: {"id"=>"7"}
+  [1m[36mPokemon Load (0.3ms)[0m  [1m[34mSELECT `pokemons`.* FROM `pokemons` WHERE `pokemons`.`id` = 7 LIMIT 1[0m
+  ↳ app/controllers/pokemons_controller.rb:67:in `set_pokemon'
+  Rendering pokemons/show.html.erb within layouts/application
+  Rendered pokemons/show.html.erb within layouts/application (Duration: 0.2ms | Allocations: 96)
+Completed 200 OK in 17ms (Views: 15.3ms | ActiveRecord: 0.3ms | Allocations: 8481)
+
+
+Started GET "/pokemons" for 127.0.0.1 at 2019-09-06 01:41:06 -0300
+Processing by PokemonsController#index as HTML
+  Rendering pokemons/index.html.erb within layouts/application
+  [1m[36mPokemon Load (0.3ms)[0m  [1m[34mSELECT `pokemons`.* FROM `pokemons`[0m
+  ↳ app/views/pokemons/index.html.erb:16
+  Rendered pokemons/index.html.erb within layouts/application (Duration: 2.2ms | Allocations: 1166)
+Completed 200 OK in 16ms (Views: 14.3ms | ActiveRecord: 0.3ms | Allocations: 8983)
+
+
+Started DELETE "/pokemons/7" for 127.0.0.1 at 2019-09-06 01:41:09 -0300
+Processing by PokemonsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"YtRRaoiiQ2g0FqIDv3YGiMc2RHcX6cNJC2c7PZlrX2yGhGajxQm0I9zXBnSrsEj/UVSfgy46Rnn/5R8BxsMilg==", "id"=>"7"}
+  [1m[36mPokemon Load (0.3ms)[0m  [1m[34mSELECT `pokemons`.* FROM `pokemons` WHERE `pokemons`.`id` = 7 LIMIT 1[0m
+  ↳ app/controllers/pokemons_controller.rb:67:in `set_pokemon'
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/pokemons_controller.rb:57:in `destroy'
+  [1m[36mPokemon Destroy (0.2ms)[0m  [1m[31mDELETE FROM `pokemons` WHERE `pokemons`.`id` = 7[0m
+  ↳ app/controllers/pokemons_controller.rb:57:in `destroy'
+  [1m[35m (51.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/pokemons_controller.rb:57:in `destroy'
+Redirected to http://localhost:3000/pokemons
+Completed 302 Found in 57ms (ActiveRecord: 52.5ms | Allocations: 2685)
+
+
+Started GET "/pokemons" for 127.0.0.1 at 2019-09-06 01:41:09 -0300
+Processing by PokemonsController#index as HTML
+  Rendering pokemons/index.html.erb within layouts/application
+  [1m[36mPokemon Load (0.3ms)[0m  [1m[34mSELECT `pokemons`.* FROM `pokemons`[0m
+  ↳ app/views/pokemons/index.html.erb:16
+  Rendered pokemons/index.html.erb within layouts/application (Duration: 1.7ms | Allocations: 1041)
+Completed 200 OK in 12ms (Views: 11.4ms | ActiveRecord: 0.3ms | Allocations: 8883)
+
+
