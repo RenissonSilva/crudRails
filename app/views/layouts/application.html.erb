@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>CrudRails</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+  <style type="text/css">
+    a{
+      color: #a34c00;
+    }
+  </style>
+
+  <body style="background-color: #ebebeb;">
+    <%= yield %>
+  </body>
+</html>
